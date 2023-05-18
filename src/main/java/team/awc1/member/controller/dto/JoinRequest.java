@@ -3,7 +3,7 @@ package team.awc1.member.controller.dto;
 import lombok.Data;
 
 @Data
-public class JoinREquest {
+public class JoinRequest {
 
     private String id;
 
