@@ -1,12 +1,12 @@
 package team.awc1.member.controller;
 
 import lombok.RequiredArgsConstructor;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import team.awc1.member.controller.dto.JoinREquest;
-import team.awc1.member.repository.MemberRepository;
+import team.awc1.member.repository.entity.Member;
 import team.awc1.member.service.MemberSerive;
 
 
@@ -31,4 +31,14 @@ public class MemberController {
             return "fail";
         }
     }
+
+    @GetMapping("/test")
+    public JoinREquest test(){
+        JoinREquest joinREquest = new JoinREquest();
+        joinREquest.setId("test");
+        joinREquest.setName("pass");
+
+        return joinREquest;
+    }
+
 }
