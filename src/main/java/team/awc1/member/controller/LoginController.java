@@ -38,8 +38,5 @@ public class LoginController {
             System.out.println("login : fail");
             return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
         }
-
     }
-
-
 }
