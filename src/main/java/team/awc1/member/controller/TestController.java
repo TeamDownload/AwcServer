@@ -1,5 +1,6 @@
 package team.awc1.member.controller;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -11,7 +12,7 @@ import java.util.Map;
 
 
 // 테스트 컨트롤러
-@RestController
+@Controller
 public class TestController {
 
     @GetMapping("/")
