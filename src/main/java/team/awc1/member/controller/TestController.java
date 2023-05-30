@@ -28,8 +28,6 @@ public class TestController {
         return joinREquest;
     }
 
-
-
     @PostMapping("/posttest")
     public String mapRequest(@RequestBody HashMap<String, Object> param){
         Map<String, String> response = new HashMap<>();
@@ -38,5 +36,4 @@ public class TestController {
         System.out.println(param.toString());
         return param.toString();
     }
-
 }
