@@ -1,4 +1,4 @@
-package team.awc1.member.service;
+package team.awc1.member.service.currenttime;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -7,7 +7,7 @@ import team.awc1.member.repository.entity.LogTimeData;
 
 @Service
 @RequiredArgsConstructor
-public class CurrentTimeServiceImpl implements CurrentTimeSerive{
+public class CurrentTimeServiceImpl implements CurrentTimeSerive {
 
     private final LogTimeDataRepository logTimeDataRepository;
 

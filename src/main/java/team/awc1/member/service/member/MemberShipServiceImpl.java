@@ -1,9 +1,10 @@
-package team.awc1.member.service;
+package team.awc1.member.service.member;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import team.awc1.member.repository.MemberRepository;
 import team.awc1.member.repository.entity.Member;
+import team.awc1.member.service.member.MemberShipSerive;
 
 import java.util.Optional;
 

@@ -1,4 +1,4 @@
-package team.awc1.member.service;
+package team.awc1.member.service.currenttime;
 
 public interface CurrentTimeSerive {
 
