@@ -19,7 +19,7 @@ public class JoinMembershipController {
 
     private final MemberShipSerive memberShipSerive;
 
-    @PostMapping("/join")
+    @PostMapping("/jointest")
     public ResponseEntity<Map<String, String>> join(@RequestBody JoinRequest joinREquest){
 
         String id = joinREquest.getId();
