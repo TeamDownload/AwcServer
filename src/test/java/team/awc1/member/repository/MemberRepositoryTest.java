@@ -22,7 +22,7 @@ public class MemberRepositoryTest {
         memberRepository.save(member);
 
         // get test
-        Member foundMember = memberRepository.findById(1L).get();
+        Member foundMember = memberRepository.findById("nyg159").get();
 
     }
     

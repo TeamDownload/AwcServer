@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import team.awc1.member.controller.dto.JoinRequest;
-import team.awc1.member.service.member.MemberShipSerive;
+import team.awc1.member.service.member.MemberShipService;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -17,16 +17,16 @@ import java.util.Map;
 @RequiredArgsConstructor
 public class JoinMembershipController {
 
-    private final MemberShipSerive memberShipSerive;
+    private final MemberShipService memberShipService;
 
-    @PostMapping("/jointest")
-    public ResponseEntity<Map<String, String>> join(@RequestBody JoinRequest joinREquest){
+    @PostMapping("/join")
+    public ResponseEntity<Map<String, String>> join(@RequestBody JoinRequest joinRequest){
 
-        String id = joinREquest.getId();
-        String name = joinREquest.getName();
-        String passWord = joinREquest.getPassWord();
+        String id = joinRequest.getId();
+        String name = joinRequest.getName();
+        String passWord = joinRequest.getPassWord();
 
-        String result = memberShipSerive.join(id, name, passWord);
+        String result = memberShipService.join(id, name, passWord);
 
         Map<String, String> response = new HashMap<>();
 

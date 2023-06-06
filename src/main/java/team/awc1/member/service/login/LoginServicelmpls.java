@@ -17,11 +17,12 @@ public class LoginServicelmpls implements LoginService {
     @Override
     public String login(String id, String passWord) {
 
-        Optional<Member> loginId = Optional.ofNullable(memberRepository.findById(id));
+        Optional<Member> loginId = memberRepository.findById(id);
 
         if (loginId.isPresent()) {
             // Check if password is correct
             if (loginId.get().getPassWord().equals(passWord)) {
+                System.out.println("login success");
                 return "success";
             } else {
                 System.out.println("password fail");

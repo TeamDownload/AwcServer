@@ -18,7 +18,7 @@ public class CurrentTimeServiceImpl implements CurrentTimeSerive {
                 .time(time)
                 .build();
         logTimeDataRepository.save(logTimeData);
-        System.out.println(executedMethod + time);
+        System.out.println("executed Method : " + executedMethod + " time : " + time);
         return "success";
     }
 }
