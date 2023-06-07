@@ -10,7 +10,7 @@ import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
-public class LoginServicelmpls implements LoginService {
+public class LoginServiceImpl implements LoginService {
 
     private final MemberRepository memberRepository;
 
